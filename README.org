@@ -1,0 +1,17 @@
+#+title: Compound
+
+* Routes
+** =GET /=
+#+begin_src http
+GET http://localhost:3000/
+#+end_src
+
+** =POST /calc=
+#+begin_src http
+POST http://localhost:3000/calc
+#+end_src
+
+** Four oh four
+#+begin_src http
+GET http://localhost:3000/nothing-to-see-here
+#+end_src

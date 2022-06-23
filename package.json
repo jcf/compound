@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "watch": "tailwindcss -i resources/compound/compound.css -o resources/public/compound.css --watch"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.2",
+    "tailwindcss": "^3.1.4"
+  }
+}
