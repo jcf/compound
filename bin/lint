@@ -1,0 +1,2 @@
+#!/bin/sh
+exec clj-kondo --lint dev src test

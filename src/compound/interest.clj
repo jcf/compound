@@ -2,7 +2,7 @@
   (:require
    [java-time :as time])
   (:import
-   (java.math RoundingMode MathContext)))
+   (java.math RoundingMode)))
 
 (defn round-half-even
   [b]

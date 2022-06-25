@@ -1,16 +1,13 @@
 (ns compound
   (:require
    [clojure.core.match :refer [match]]
-   [clojure.java.io :as io]
    [clojure.pprint :refer [pprint]]
-   [clojure.walk :as walk]
    [compound.interest :as interest]
    [compound.style :as style]
    [hiccup.core :refer [html]]
    [jsonista.core :as json]
    [malli.core :as m]
    [malli.transform :as mt]
-   [ring.adapter.jetty :as jetty]
    [ring.middleware.defaults :as defaults]
    [ring.util.anti-forgery :refer [anti-forgery-field]]))
 
