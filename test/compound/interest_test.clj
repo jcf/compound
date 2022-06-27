@@ -18,7 +18,7 @@
     (bigdec 11.123) (bigdec 11.12)))
 
 (deftest monthly
-  (let [months (sut/monthly (bigdec 1000) account)
+  (let [months            (sut/monthly (bigdec 1000) account)
         {:keys [balance]} (last months)]
     (is (= 600 (count months)))
     (is (instance? BigDecimal balance))
