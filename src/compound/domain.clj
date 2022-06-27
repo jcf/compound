@@ -2,6 +2,8 @@
   (:require
    [clojure.spec.alpha :as s]))
 
+(s/def :page/body-attrs (s/map-of keyword? some?))
+(s/def :page/html-attrs (s/map-of keyword? some?))
 (s/def :page/title string?)
 
 (s/def :compound/page
