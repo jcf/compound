@@ -9,9 +9,6 @@
 (def ^:private config
   {:bootstrap-script "console.log('Compound');"})
 
-(def handler
-  (sut/make-handler {::sut/site-defaults {:security {:anti-forgery false}}}))
-
 ;;; ----------------------------------------------------------------------------
 ;;; GET /
 
