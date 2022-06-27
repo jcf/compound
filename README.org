@@ -25,7 +25,7 @@ pnpm install
 bin/watch
 #+end_src
 
-To run the server-side component fire up a REPL and invoke
+To run the server-side component, fire up a REPL and invoke
 =com.stuartsierra.component.user-helpers/reset=. Emacs users can jack in and
 =cider-ns-refresh= to start a development system.
 
