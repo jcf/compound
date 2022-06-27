@@ -3,13 +3,13 @@
    [clojure.java.io :as io]
    [com.stuartsierra.component :as component]
    [com.stuartsierra.component.repl :refer [set-init]]
-   [compound]
+   [compound.next :as next]
    [ring.adapter.jetty :as jetty]))
 
 (defrecord App [script-path handler]
   component/Lifecycle
   (start [this]
-    (assoc this :handler (compound/make-handler
+    (assoc this :handler (next/make-handler
                           {:bootstrap-script (-> script-path io/resource slurp)})))
   (stop [this]
     (assoc this :handler nil)))

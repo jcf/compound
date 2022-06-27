@@ -1,17 +1,41 @@
 #+title: Compound
 
-* Routes
-** =GET /=
-#+begin_src http
-GET http://localhost:3000/
+#+begin_quote
+Playing with [[https://htmx.org/][htmx]] from Clojure.
+#+end_quote
+
+Note, the calculation of compound interest is unrealistic. It increases your
+balance every single month by the given rate, which results in substantial
+geometric growth over the fifty year period.
+
+The point is to play with htmx rather than delve into the nuance of compound
+interest. For more information on the maths, check out [[https://en.wikipedia.org/wiki/Compound_interest][Wikipedia]].
+
+* Dependencies
+- [[https://clojure.org/guides/install_clojure][Clojure]]
+- [[https://github.com/clj-kondo/clj-kondo/blob/master/doc/install.md][clj-kondo]]
+- [[https://pnpm.io/installation][pnpm]]
+
+* What's in the box?
+To make things more pretty, we use [[https://tailwindcss.com/][TailwindCSS]] via [[https://pnpm.io][pnpm]]. To watch for changes in
+=resources/compound/compound.css=:
+
+#+begin_src sh
+pnpm install
+bin/watch
 #+end_src
 
-** =POST /calc=
-#+begin_src http
-POST http://localhost:3000/calc
+To run the server-side component fire up a REPL and invoke
+=com.stuartsierra.component.user-helpers/reset=. Emacs users can jack in and
+=cider-ns-refresh= to start a development system.
+
+For anyone who's not running Cider and Emacs, you can start a development server
+from the command line like so:
+
+#+begin_src sh
+clojure -M:dev:test -m compound.dev
 #+end_src
 
-** Four oh four
-#+begin_src http
-GET http://localhost:3000/nothing-to-see-here
-#+end_src
+* Tests
+- =bin/test=
+- =bin/lint=

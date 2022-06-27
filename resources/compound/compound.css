@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#report {
+  transition: opacity 0.2s ease-out;
+  opacity: 1;
+}
+
+#report.htmx-swapping {
+  opacity: 0;
+}
