@@ -4,7 +4,7 @@
    [clojure.test :refer [are deftest is]]
    [matcher-combinators.clj-test]))
 
-(def account
+(def ^:private account
   {:m 100
    :p 1000
    :r 0.01})
