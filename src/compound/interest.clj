@@ -1,6 +1,6 @@
 (ns compound.interest
   (:require
-   [java-time :as time])
+   [java-time.api :as time])
   (:import
    (java.math RoundingMode)))
 
