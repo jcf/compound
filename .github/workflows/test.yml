@@ -22,6 +22,8 @@ jobs:
         uses: DeLaGuardo/setup-clojure@11.0
         with:
           cli: latest
+          clj-kondo: latest
+
 
       - name: Lint
         run: bin/lint
