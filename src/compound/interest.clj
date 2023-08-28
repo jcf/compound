@@ -17,7 +17,7 @@
 
 (defn round-half-even
   [b]
-  (.setScale b 2 RoundingMode/ROUND_HALF_EVEN)
+  (.setScale b 2 RoundingMode/ROUND_HALF_EVEN))
 
 (defn grow
   [balance bigm bigr]
